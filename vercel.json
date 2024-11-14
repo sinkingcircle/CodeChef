@@ -1,9 +1,1 @@
-{
-  "redirects": [
-    {
-      "source": "/:slug.html",
-      "destination": "/:slug",
-      "statusCode": 301
-    }
-  ]
-}
+

@@ -1,0 +1,99 @@
+.heatmap-container h3 {
+    font: bold normal 18px Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #4a4a4a;
+    border-top: 1px solid;
+    margin-top: 15px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+svg rect.day {
+    fill: #d9d9d9;
+    shape-rendering: crispedges;
+}
+
+svg rect.day:hover {
+    stroke: #aaa;
+    stroke-width: 1px;
+}
+
+svg rect.day[category] {
+    fill: #d9d9d9;
+}
+
+svg rect.day[category='0'] {
+    fill: #6cbffc;
+}
+
+svg rect.day[category='1'] {
+    fill: #c1deae;
+}
+
+svg rect.day[category='2'] {
+    fill: #91c788;
+}
+
+svg rect.day[category='3'] {
+    fill: #78b279;
+}
+
+svg rect.day[category='4'] {
+    fill: #519259;
+}
+
+svg rect.day[category='5'] {
+    fill: #064635;
+}
+
+svg text {
+    fill: #ccc;
+    font-size: 11px;
+}
+svg text.month {
+    fill: #aaa;
+}
+
+.svg-tag {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    color: #eee;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 5px 15px;
+    position: absolute;
+    text-align: center;
+}
+
+.svg-tag:after {
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    bottom: -5px;
+    content: '';
+    height: 0;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    width: 0;
+}
+
+#debug {
+    color: red;
+    font-weight: bold;
+}
+
+text,
+.month {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 100%;
+    color: #4a4a4a !important;
+    fill: #4a4a4a !important;
+}
+
+.month {
+    font-size: 12px;
+}
